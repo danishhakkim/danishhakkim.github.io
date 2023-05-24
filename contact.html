@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us</title>
+        <script>
+            function showAlert() {
+              alert("Submit button clicked!");
+            }
+          </script>
+        
+    </head>
+
+    <style>
+        
+        .Address{
+            text-align: center;
+            font-style: Trebuchet MS (sans-serif);
+        }
+        .Ttle{
+            color: antiquewhite;
+            text-align: center;
+            font-style: Trebuchet MS (sans-serif);
+            font-size: 150%;
+        }
+
+        body{
+            background:linear-gradient(0deg,blue,blueviolet);
+            width: 100%;
+            height: 100vh;
+        }
+        form{
+            width: 100%;
+            margin: auto;
+            padding-left: 35%;
+            color: white;
+            
+        }
+
+        .feilds{
+            padding-left: 150px;
+            padding-bottom: 20px;
+        }
+        .SUBMIT{
+            width: 375px;
+            height: 5vh;
+            color: white; 
+            text-align: center;
+            background-color: rgb(0, 102, 255);
+                }
+
+    </style>
+
+    <body>
+        <div class="Ttle">
+            <h1>Contact Us</h1>
+        </div>
+        
+
+        <div class="Address">
+            <p>
+                <h5 style="text-align: center ; color: rgb(255, 255, 255);font-style: Trebuchet MS (sans-serif);">Got a question?We'd love to hear from you.Send us a message<br>
+                    and we will respond as soon as possible.
+                </h5>
+            </p>
+        </div>
+        <form>
+            <label>Name*  </label><br>
+            <input type="text" class="feilds"><br><br>
+        
+            <label>Email Address*  </label><br>
+            <input type="email" class="feilds"><br><br>
+
+            <label>Message* </label><br>
+            <textarea rows="5" cols="30" name="Message" class="feilds">
+            </textarea><br><br>
+
+            <input type="submit" value="Submit Message" class = "SUBMIT" onclick="showAlert()"/>
+        </form>
+        
+    </body>
+</html>
