@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(225deg,rgb(63, 1, 63),rgb(247, 9, 195)) ;
+        }
+        .RegBox{
+            background-color: white;
+            margin-top: 10%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-bottom: 75%;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .Header{
+            width: 100%;
+            text-align: left;
+            padding-top: 5px;
+        }
+        form{
+            padding: 5px;
+        }
+        .LEFT{
+            width: 50%;
+
+        }
+        .RIGHT{
+            width: 50%;
+        }
+        .Bars{
+            width: 90%;
+        }
+        .SubBox{
+            background-color: rgb(57, 131, 228);
+            color: black;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+    </style>
+
+    <div class = "RegBox">
+        <h2 class="Header">Registration Form</h2>
+
+        <form action="#" method="get">
+            <div style="display: flex;">
+
+                <div class="LEFT">
+                    <label>First Name</label><br>
+                    <input type="text" class="Bars"><br><br>
+        
+                    <label>Birthday</label><br>
+                    <input type="date" class="Bars"><br><br>
+                    <label>Email</label><br>
+                    <input type="email" class="Bars"><br><br>
+                </div>
+
+                <div class="RIGHT">
+                    <label>Last Name</label><br>
+                    <input type="text" class="Bars"><br><br>
+
+                    <label>Gender</label><br>
+                       
+                    <fieldset style="border: 0px; margin-bottom: 9px;">
+                        <label>Male</label>
+                        <input type="radio" name="Male" id="Male">
+                        <label>Female</label>
+                        <input type="radio" name="Female" id="Female"> 
+                    </fieldset>
+       
+                    <label>Phone Number</label><br>
+                    <input type="number" class="Bars"><br><br>
+                </div>
+                <br>
+        
+            </div>
+            <label>Subject</label><br>
+            <input type="text" id="Sub" style="width: 97%;"><br><br>
+            <input type="submit" value="Submit Message" class ="SubBox" onclick="showAlert()">
+        </form>
+
+    </div>
+
+    <script>
+            function showAlert(){
+                var msg=document.getElementById("Sub")
+                alert(msg.value);
+            }
+    </script>
+</html>
